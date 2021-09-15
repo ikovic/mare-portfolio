@@ -47,7 +47,7 @@
           <ul id="navigation-list" class="navigation">
             {%- for pageEntry in navigation %}
               <li>
-                <a role="link" class="navigation__link link--clear" href="/{{ navigation[ loop.index0 ] }}" {% if page.url.replaceAll("/", "") == navigation[ loop.index0 ] %} aria-current="page" {% endif %}>{{ pageEntry }}</a>
+                <a role="link" class="navigation__link link--clear" href="{{ homeUrl + navigation[ loop.index0 ] }}" {% if page.url.replaceAll("/", "") == navigation[ loop.index0 ] %} aria-current="page" {% endif %}>{{ pageEntry }}</a>
               </li>
             {%- endfor %}
           </ul>
