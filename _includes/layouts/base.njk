@@ -1,11 +1,3 @@
----
-mobileNavHref: /contact
-mobileNavText: Contact
-navigation:
- - portfolio
- - contact
----
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -47,7 +39,7 @@ navigation:
   <body>
     <div id="layout">
       <header id="header">
-        <a href="/" class="logo">Marija Miletić</a>
+        <a href="{{ homeUrl | url }}" class="logo">Marija Miletić</a>
         <nav class="mobile">
           {% button mobileNavText | safe, mobileNavHref | url, "button--small" %}
         </nav>

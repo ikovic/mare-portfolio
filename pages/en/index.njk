@@ -1,8 +1,10 @@
 ---
 pageTitle: Home
 layout: layouts/base.njk
-prefetch: /portfolio
+prefetch: /en/portfolio
 stylesheet: css/home.css
+mobileNavHref: /en/contact
+mobileNavText: Contact
 ---
 <div class="hero-grid">
     <article class="hero desktop">
@@ -19,7 +21,7 @@ stylesheet: css/home.css
             Experienced freelance graphic designer with a demonstrated history of working in the graphic design industry. 
             Specializes in a wide range of print and digital graphic design services, including logo design, book design, illustrations, and more.
         </p>
-        {% button "See my work", "/portfolio" %}
+        {% button "See my work", "/en/portfolio" %}
     </article>
     <article class="hero mobile">
         <div class="image__wrapper">
@@ -29,7 +31,7 @@ stylesheet: css/home.css
             <h1 class="hero__h1">
                 Graphic Design & Illustration
             </h1>
-            {% button "See my work", "/portfolio", "button--negative mt-m" %}
+            {% button "See my work", "/en/portfolio", "button--negative mt-m" %}
         </div>           
     </article>
     <article id="bio" class="mobile">
