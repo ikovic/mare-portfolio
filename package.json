@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Static site: Mare portfolio",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy --serve"
   },
   "repository": {
     "type": "git",

@@ -5,17 +5,27 @@ layout: layouts/en.njk
 gallery: true
 stylesheet: css/portfolio.css
 logoImages:
- - smartstart
- - midnk
- - nest
- - antico
+ - name: smartstart
+   caption: Logo and brand design for a company that produces electronic hardware.
+ - name: midnk
+   caption: Logo concept for a kindergarten.
+ - name: nest
+   caption: Logo concept for student housing.
+ - name: antico
+   caption: Logo design for a vacation rental house.
 editorialImages:
- - magazin
- - brochure
- - fantastikon
- - cover
- - nova
- - zen
+ - name: magazin
+   caption: Editorial design of a zine intended for young people that love sci-fi, fantasy and board games.
+ - name: brochure
+   caption: Brochure design for a exhibition about Valentina Tereškova, first woman in space.
+ - name: fantastikon
+   caption: Book interior and cover design for a collection of short stories. Book was promoted in a sci-fi convention called FantaSTikon.
+ - name: cover
+   caption: Book cover concept for a self help book.
+ - name: nova
+   caption: Brochure for apartment renting.
+ - name: zen
+   caption: Menu design for a sushi restaurant.
 illustrationImages:
  - fico
  - morph
@@ -26,13 +36,13 @@ illustrationImages:
     <h2>Editorial Design</h2>    
     <div id="editorial">
         {% for image in editorialImages %}
-            {% gallery "images/portfolio/" + image + ".jpg", image %}            
+            {% gallery "images/portfolio/" + image.name + ".jpg", image.name, image.caption %}            
         {% endfor %}
     </div>
     <h2>Logo Design & Branding</h2>
     <div id="logo">
         {% for image in logoImages %}
-            {% gallery "images/portfolio/" + image + ".jpg", image %}
+            {% gallery "images/portfolio/" + image.name + ".jpg", image.name, image.caption %}
         {% endfor %}
     </div>
     <h2>Illustration</h2>

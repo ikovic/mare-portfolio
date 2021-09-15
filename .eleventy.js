@@ -64,7 +64,7 @@ const thumbnailShortcode = createResponsiveImageGenerator([760]);
  * @param {*} alt
  * @returns
  */
-async function galleryItemShortcode(mainSrc, alt) {
+async function galleryItemShortcode(mainSrc, alt, caption = "") {
   const thumbnail = await thumbnailShortcode(mainSrc, alt, null, 'gallery__image');
   const stats = await Image(mainSrc, {
     widths: [760, 1120],
@@ -82,7 +82,7 @@ async function galleryItemShortcode(mainSrc, alt) {
 
   const srcSet = JSON.stringify([dataSourcesWebp, dataSourcesJpeg]);
 
-  return `<a data-src="${stats.jpeg[0].url}" data-sources='${srcSet}'>${thumbnail}</a>`;
+  return `<a data-sub-html="<p>${caption}</p>" data-src="${stats.jpeg[0].url}" data-sources='${srcSet}'>${thumbnail}</a>`;
 }
 
 module.exports = function (eleventyConfig) {

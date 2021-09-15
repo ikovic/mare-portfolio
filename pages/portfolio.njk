@@ -5,17 +5,27 @@ layout: layouts/hr.njk
 gallery: true
 stylesheet: css/portfolio.css
 logoImages:
- - smartstart
- - midnk
- - nest
- - antico
+ - name: smartstart
+   caption: Dizajn logotipa i osmišljavanje vizualnog identiteta za firmu koja se bavi proizvodnjom elektroničkih sklopova.
+ - name: midnk
+   caption: Koncept logotipa za vrtić.
+ - name: nest
+   caption: Koncept logotipa za smještaj studenata.
+ - name: antico
+   caption: Dizajn logotipa za Villu za iznajmljivanje.
 editorialImages:
- - magazin
- - brochure
- - fantastikon
- - cover
- - nova
- - zen
+ - name: magazin
+   caption: Grafičko oblikovanje zine-a za mlade obožavatelje znanstvene fantastike, fantasy-a i društvenih igara.
+ - name: brochure
+   caption: Dizajn brošure za izložbu o Valentini Tereškovi.
+ - name: fantastikon
+   caption: Dizajn interijera knjige i naslovnice za zbirku kratkih priča.
+ - name: cover
+   caption: Koncept naslovnice za self-help knjigu
+ - name: nova
+   caption: Brošura za iznajmljivanje apartmana
+ - name: zen
+   caption: Dizajn menija za sushi restoran
 illustrationImages:
  - fico
  - morph
@@ -26,13 +36,13 @@ illustrationImages:
     <h2>Grafički dizajn</h2>    
     <div id="editorial">
         {% for image in editorialImages %}
-            {% gallery "images/portfolio/" + image + ".jpg", image %}            
+            {% gallery "images/portfolio/" + image.name + ".jpg", image.name, image.caption %}            
         {% endfor %}
     </div>
     <h2>Logo dizajn & vizualni identitet</h2>
     <div id="logo">
         {% for image in logoImages %}
-            {% gallery "images/portfolio/" + image + ".jpg", image %}
+            {% gallery "images/portfolio/" + image.name + ".jpg", image.name, image.caption %}
         {% endfor %}
     </div>
     <h2>Ilustracije</h2>
