@@ -1,6 +1,6 @@
 ---
 pageTitle: Portfolio
-layout: layouts/base.njk
+layout: layouts/hr.njk
 gallery: true
 stylesheet: css/portfolio.css
 logoImages:
@@ -22,19 +22,19 @@ illustrationImages:
  - fall
 ---
 <section id="portfolio">
-    <h2>Editorial Design</h2>    
+    <h2>Grafički dizajn</h2>    
     <div id="editorial">
         {% for image in editorialImages %}
             {% gallery "images/portfolio/" + image + ".jpg", image %}            
         {% endfor %}
     </div>
-    <h2>Logo Design & Branding</h2>
+    <h2>Logo dizajn & vizualni identitet</h2>
     <div id="logo">
         {% for image in logoImages %}
             {% gallery "images/portfolio/" + image + ".jpg", image %}
         {% endfor %}
     </div>
-    <h2>Illustration</h2>
+    <h2>Ilustracije</h2>
     <div id="illustration">
         {% for image in illustrationImages %}
             {% gallery "images/portfolio/" + image + ".jpg", image %}
