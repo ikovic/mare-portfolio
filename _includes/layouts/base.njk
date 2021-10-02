@@ -73,7 +73,9 @@
 
     {% if gallery %}
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="{{ '/lib/lightgallery.js' | url }}"></script>      
+      <script src="{{ '/lib/lightgallery.js' | url }}"></script>  
+      <script src="{{ '/lib/fs.js' | url }}"></script>
+      <script src="{{ '/lib/zoom.js' | url }}"></script>
       <script src="{{ '/lib/justifiedGallery.js' | url }}"></script>
       {% set js %}
         {% include "js/gallery.js" %}

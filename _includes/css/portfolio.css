@@ -7,6 +7,8 @@
   font-size: 1.25rem;
   color: var(--color-header);
   margin: 1.5rem 0 0.75rem 0;
+  text-transform: none;
+  letter-spacing: initial;
 }
 
 @media (max-width: 80rem) {

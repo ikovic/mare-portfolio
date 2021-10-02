@@ -64,7 +64,7 @@ const thumbnailShortcode = createResponsiveImageGenerator([760]);
  * @param {*} alt
  * @returns
  */
-async function galleryItemShortcode(mainSrc, alt, caption = "") {
+async function galleryItemShortcode(mainSrc, alt, caption = '') {
   const thumbnail = await thumbnailShortcode(mainSrc, alt, null, 'gallery__image');
   const stats = await Image(mainSrc, {
     widths: [760, 1120],
@@ -92,6 +92,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     './node_modules/lightgallery/css/lightgallery-bundle.min.css': 'lib/lightgallery.css',
     './node_modules/lightgallery/lightgallery.min.js': 'lib/lightgallery.js',
+    './node_modules/lightgallery/plugins/fullscreen/lg-fullscreen.min.js': 'lib/fs.js',
+    './node_modules/lightgallery/plugins/zoom/lg-zoom.min.js': 'lib/zoom.js',
     './node_modules/lightgallery/images/loading.gif': 'images/loading.gif',
     './node_modules/lightgallery/fonts/lg.ttf': 'fonts/lg.ttf',
     './node_modules/lightgallery/fonts/lg.woff': 'fonts/lg.woff',

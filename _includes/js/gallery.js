@@ -6,10 +6,12 @@ function initGallery(gallery) {
         autoplayFirstVideo: false,
         pager: false,
         licenseKey: 'C156C168-AEF34EB8-96448D28-6C369D5D',
+        plugins: [lgFullscreen, lgZoom],
+        fullScreen: true,
         galleryId: gallery,
         mobileSettings: {
           controls: false,
-          showCloseIcon: false,
+          showCloseIcon: true,
           download: false,
           rotate: false,
         },
