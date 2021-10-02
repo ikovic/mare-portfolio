@@ -80,3 +80,14 @@
     width: 75%;
   }
 }
+
+.location {
+  vertical-align: middle;
+}
+
+.location__image {
+  height: auto;
+  width: 0.75rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
