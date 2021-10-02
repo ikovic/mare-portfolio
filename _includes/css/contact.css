@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
-  padding: 4rem;
+  padding: 2rem 0;
 }
 
 .hero--dark {
