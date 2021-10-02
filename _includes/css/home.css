@@ -7,27 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
-  padding: 4rem;
-}
-
-.hero-grid h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 3.25rem;
-}
-
-.hero-grid h2 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 2rem;
-  letter-spacing: 0.195em;
-}
-
-.hero-grid p {
-  line-height: 1.25rem;
-  letter-spacing: 0.195em;
-  font-size: 0.85rem;
+  padding: 2rem 0;
 }
 
 @media (max-width: 991px) {
@@ -88,5 +68,47 @@
 
   .hero__overlay {
     padding: 2rem 0;
+  }
+}
+
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  background-color: #414141;
+}
+
+.location {
+  vertical-align: middle;
+}
+
+.location__image {
+  height: auto;
+  width: 1rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.columns div h3 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  #services {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+
+  .columns {
+    margin-top: 1rem;
+    column-gap: 2rem;
   }
 }

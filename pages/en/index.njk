@@ -10,10 +10,10 @@ stylesheet: css/home.css
         {% image "images/pencil.jpeg", "photo of my pencil", "(max-width: 760px) 50vw, 100vw", "hero__image" %}
     </article>
     <article class="hero hero--dark desktop">
-        <h1>
+        <h1 class="h1">
             Graphic Design & Illustration
         </h1>
-        <h2>
+        <h2 class="h2">
             Marija Miletić
         </h2>
         <p class="mb-xl">
@@ -27,7 +27,7 @@ stylesheet: css/home.css
             {% image "images/pencil-vertical.jpeg", "photo of my pencil", "(max-width: 767px) 120px, (max-width: 991px) 120px, 10vw", "hero__image" %}
         </div>
         <div class="hero__overlay">
-            <h1 class="hero__h1">
+            <h1 class="h1 hero__h1">
                 Graphic Design & Illustration
             </h1>
             {% button "See my work", "/en/portfolio", "button--negative mt-m" %}
@@ -46,3 +46,31 @@ stylesheet: css/home.css
         </p>
     </article>
 </div>
+<section id="services">
+    <div>
+        <h1 class="h1">What I do</h1>
+        <h2 class="h2">GRAPHIC DESIGN</h2>
+        <span class="location">{% image "images/location.jpeg", "location", "(max-width: 760px) 5vw, 1vw", "location__image" %}Split, Croatia</span>
+        <div class="mt-xl">
+            {% button "Contact me", "/en/contact", "button--inverted" %}
+        </div>
+    </div>
+    <div class="columns">
+        <div>
+            <h3>Branding</h3>
+            <h3>Logo Design</h3>
+            <h3>Business Cards</h3>
+            <h3>Brochures</h3>
+            <h3>Book Covers</h3>
+            <h3>Book Interior</h3>
+        </div>
+        <div>
+            <h3>Flyers</h3>
+            <h3>Posters</h3>
+            <h3>Menus</h3>
+            <h3>Illustrations</h3>
+            <h3>Board Games</h3>
+            <h3>And more!</h3>
+        </div>
+    </div>
+</section>

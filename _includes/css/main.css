@@ -166,6 +166,10 @@ body,
   margin-top: 2rem;
 }
 
+.mt-xl {
+  margin-top: 2.75rem;
+}
+
 .no-margin {
   margin: 0;
 }
@@ -223,6 +227,19 @@ a.link--clear[aria-current] {
   color: beige;
 }
 
+.button--inverted {
+  background-color: var(--color-header);
+  border: var(--color-text) solid 1px;
+  color: var(--color-text);
+}
+
+.button--inverted:hover,
+.button--inverted:focus,
+.button--inverted:active {
+  color: #e7e7e7;
+  border: #e7e7e7 solid 1px;
+}
+
 .centered-content {
   display: flex;
   align-items: center;
@@ -231,14 +248,31 @@ a.link--clear[aria-current] {
 
 p {
   margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  letter-spacing: 0.195em;
+  font-size: 0.85rem;
 }
 
 h1 {
   margin: 0 0 1.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.25rem;
 }
 
 h2 {
   margin: 0 0 0.75rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 0.195em;
+}
+
+@media (max-width: 991px) {
+  p {
+    font-size: 1rem;
+  }
 }
 
 .underline {
