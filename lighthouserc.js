@@ -2,7 +2,7 @@ module.exports = {
     ci: {
         collect: {
             staticDistDir: './_site',
-            numberOfRuns: 3,
+            numberOfRuns: 2,
         },        
         upload: {
             target: 'temporary-public-storage',
