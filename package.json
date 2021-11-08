@@ -4,7 +4,8 @@
   "description": "Static site: Mare portfolio",
   "scripts": {
     "start": "eleventy --serve",
-    "debug": "DEBUG=Eleventy* eleventy --serve"
+    "debug": "DEBUG=Eleventy* eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
